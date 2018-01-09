@@ -6,71 +6,75 @@
 body {
     font-size: 16;
     font-family: Pathway Gothic One;
-    background-image: url(../images/757425.jpeg);
+    background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 240px;
+    padding-bottom: 543px;
 }
 .wrapper {
-    width: 600px;
+    width: 480px;
     margin: auto;
+    background: #fff;
+    padding: 0 38px;
 }
-.menu {
-    text-align: center;
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #515d77;
 }
-.menu li {
+h3 {
+    font-size: 14px;
+    color: #515d77;
     display: inline-block;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 5px 10px;
-    color: aqua;
-    border: 2px solid rebeccapurple;
-    background-color: #fff;
 }
-.menu li:hover {
-    background-color: red;
-    color: blue;
+p {
+    font-size: 12px;
 }
-a {
+.list {
+    column-count: 2;
+    list-style-type: none;
+    font-size: 14px;
+    color: #515d77;
     display: inline-block;
-    text-decoration: none;
+    padding: 10px 0 0 20px;
 }
-.profile {
-    margin-top: 20px;
-}
-/*user*/
-.user {
-    vertical-align: top;
+
+
+/*agency profile*/
+.about {
+    padding: 60px 0 50px; 
     display: inline-block;
-    width: 25%;
-    background-color: rgb(57, 155, 78);
-    padding: 10px;
-    margin-right: -4px;
 }
-.user img {
+.about img {
     display: block;
     width: 100%;
+    margin: 35px 0 28px; 
 }
-.user h2 {
-    color: blue;
-    text-align: center;
+.about h3 {
+    padding-bottom: 20px;
 }
-/*posts*/
-.posts {
-    vertical-align: top;
+
+
+/*our principles*/
+.workflow {
+    padding-bottom: 54px;
+    box-shadow: 0 2px 0 0 #BDBDBD;
+}
+.workflow h3 {
+    padding: 28px 0 20px;
+}
+
+
+/*what we offer*/
+.offers {
+    padding: 54px 0 43px;
+}
+.offers h3 {
+    padding: 28px 0 20px;
+}
+.list li{
     display: inline-block;
-    width: 75%;
-    height: 200px;
-    padding: 0 10px;
-}
-.posttext {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-.posttext h2 {
-    color: blueviolet;
-}
-.posttext p {
-    margin-top: 10px;
+    padding-top: 20px; 
 }
