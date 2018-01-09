@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16;
+    font-family: Pathway Gothic One;
+    background-image: url(../images/757425.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper {
+    width: 600px;
+    margin: auto;
+}
+.menu {
+    text-align: center;
+}
+.menu li {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    color: aqua;
+    border: 2px solid rebeccapurple;
+    background-color: #fff;
+}
+.menu li:hover {
+    background-color: red;
+    color: blue;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+.profile {
+    margin-top: 20px;
+}
+/*user*/
+.user {
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+    background-color: rgb(57, 155, 78);
+    padding: 10px;
+    margin-right: -4px;
+}
+.user img {
+    display: block;
+    width: 100%;
+}
+.user h2 {
+    color: blue;
+    text-align: center;
+}
+/*posts*/
+.posts {
+    vertical-align: top;
+    display: inline-block;
+    width: 75%;
+    height: 200px;
+    padding: 0 10px;
+}
+.posttext {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.posttext h2 {
+    color: blueviolet;
+}
+.posttext p {
+    margin-top: 10px;
+}
