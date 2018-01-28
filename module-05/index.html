@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework-5</title>
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet" >
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu-first1">
+                <li class="menu-firstelement"><a href="#">HOME</a></li>
+                <li class="menu-firstelement">
+                    <div class="triangle"></div>                    <ul class="menu-second">
+                        <li class="menu-secondelement"><a href="#">Agency</a></li>
+                        <li class="menu-secondelement"><a href="#">News</a></li>
+                        <li class="menu-secondelement"><a href="#">Team</a></li>
+                    </ul>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li class="menu-firstelement"><a href="#">Gallery</a></li>
+            </ul>
+            <div class="logo">
+                <a href="#"><h1 class="name">journey</h1></a>
+            </div>
+            <ul class="menu-first2">
+                <li class="menu-firstelement"><a href="#">Tours</a></li>
+                <li class="menu-firstelement"><a href="#">Blog</a></li>
+                <li class="menu-firstelement"><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <section class="adv">
+                <p class="photoprev1">THERE ARE PLENTY OF PLACES</p>
+                <p class="photoprev2">that are worth seeing</p>
+            <article class="slide">
+                <article class="photo">
+                    <div><img src="images/layer6.jpg" alt="Welcome to Bali"></div>
+                </article>
+                <article class="photo">
+                    <div><img src="images/layer52.jpg" alt="Welcome to Rome"></div>
+                </article>
+                <article class="photo">
+                    <div><img src="images/layer53.jpg" alt="Welcome to Barcelona"></div>
+                </article>
+                <article class="photo">
+                    <div><img src="images/layer54.jpg" alt="Welcome to Venice"></div>
+                </article>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                <script>
+                $(document).ready(function () {
+                    $('.slide').slick({
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    prevArrow: '<button class="circleLeft"></button>',
+                    nextArrow: '<button class="circleRight"></button>',
+                    });
+                    });
+                </script>
+            </article>
+        </section>
+        <section class="best">
+            <h2>Top Destinations</h2>
+            <aside class="about">
+                <img src="images/Venice.jpg" alt="Venice">
+                <article class="intro">
+                    <h3>Venice</h3>
+                    <p>Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite a rew qw vehicula lacinia arcufasecro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabitur oliti aliquam bibendum olor quis malesuadivamu.</p>
+                    <button>Details</button>
+                </article>                
+            </aside>
+            <aside class="about"><img src="images/NY.jpg" alt="New York">
+                <article class="intro">
+                    <h3>New York</h3>
+                    <p>Psum dolor sit ametylo gerto consectetur ertori hykill holit adipiscing lity. Donecto rtopil pellentesque osueremo dasi massa eget cotyll kollit asec emmodem auctor geteq tiloli. Aliquam dapibus neclol nami wertoli elittro eget vulpoli no utaterbil congue turpis in suscipit mintyulitiam ac.</p>
+                    <button>Details</button>
+                </article>
+            </aside>
+            <aside class="about"><img src="images/Paris.jpg" alt="Paris">
+                <article class="intro">    
+                    <h3>Paris</h3>
+                    <p>Lorem ipsum dolor sityl trew amet, consectipiscinge elitii. Ham nec urnageri dignissim adipiscing jul quam eleifend, mattisel arcu. Curabitur nolol luctusol ipsum sed massa lil baw gerty ultrices non hyw ercursuswer quam itrabitur. Neque risus, cursus a porta eu, elementum id dolor. </p>
+                    <button>Details</button>
+                </article>
+            </aside>
+        </section>
+   </div>
+</body>
+</tml>

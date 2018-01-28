@@ -1,0 +1,287 @@
+body {
+    font-size: 16;
+    font-family: Pathway Gothic One;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+    padding-bottom: 70px;
+}
+/* logo */
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 140px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+}
+.name {
+    text-transform: uppercase;
+    font-family: 'Dorsa';
+    font-size: 60px;
+    color: #263555;
+    display: inline-block;
+}
+/* menu */
+.menu {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 28px;
+    position: relative;
+    width: 1020px;
+    height: 140px;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.menu-firstelement:hover>a {
+    color: #263555;
+}
+.menu-firstelement>a {
+    padding-bottom: 15px;
+}
+.menu-first1 {
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: 56px;
+}
+.menu-first2 {
+    position: absolute;
+    display: inline-block;
+    right: 100px;
+    top: 56px;
+}
+.menu-first1>.menu-firstelement {
+    display: inline-block;
+    margin-right: 60px;
+    list-style-type: none;
+    position: relative;
+}
+.menu-first2>.menu-firstelement {
+    display: inline-block;
+    margin-left: 60px;
+    list-style-type: none;
+    position: relative;
+}
+.menu-firstelement:first-child {
+    margin-left: 0px;
+}
+.menu-firstelement:nth-child(3) {
+    margin-right: 0px;
+}
+.menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+}
+.menu-second {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #ffffff;
+    top: 38px;
+    left: -7px;
+    padding: 0 10px 0;
+    border-radius: 3px;
+    text-align: center;
+}
+.menu-secondelement>a {
+    color: #6b7488;
+    font-size: 20px;
+
+}
+.menu-second::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    top: -9px;
+    left: 36%;
+}
+.menu-firstelement:hover>.menu-second {
+    display: block;
+}
+
+/* other content */
+.wrapper {
+    width: 1025px;
+    margin: auto;
+    background: #fff;
+    padding: 60px 60px 0 60px;
+    margin-top: 50px;
+}
+.slide,
+.slide::before,
+.slide::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+.photo {
+    display: inline-block;
+}
+.section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.slide {
+    width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.photoprev1,
+.photoprev2 {
+    position: absolute;
+    z-index: 5;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    text-align: left;
+}
+.photoprev1 {
+    font-size: 22px;
+    background: #ffffff;
+    color: #515d77;
+    padding: 15px;
+    top: 515px;
+    margin-left: 10px;
+}
+.photoprev2 {
+    font-size: 34px;
+    top: 570px;
+    color: #ffffff;
+    padding: 15px;
+    margin-left: 10px;
+}
+.circle {
+    width: 90px;
+    height: 90px;
+
+}
+.circleLeft {
+    width: 45px;
+    height: 90px;
+    background-color: #38afe5;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    border: solid #38afe5;
+    position: absolute;
+    left: 35px;
+    top: 450px;
+    z-index: 1;
+}
+.circleLeft:hover {
+    background-color: rgba(56, 175, 229, 0.5);
+}
+.circleLeft::after {
+    content: " \2190 ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+.circleRight {
+    width: 45px;
+    height: 90px;
+    background-color: #38afe5;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    border: solid #38afe5;
+    position: absolute;
+    left: 80px;
+    top: 450px;
+    transform: translate(-50%, -50%)
+    z-index: 5;
+}
+.circleRight:hover {
+    background-color: rgba(56, 175, 229, 0.5);
+}
+.circleRight::after {
+    content: " \2192 ";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.adv {
+    display: inline-block;
+    margin-bottom: 55px;
+}
+/* about */
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 30px;
+    color: #193149;
+    margin-bottom: 50px;
+}
+.about {
+    display: inline-block;
+    width: 290px;
+    height: 270px;
+    position: relative;
+    margin-right: 13px;
+    margin-bottom: 135px;
+}
+.about:last-child {
+    margin-right: 0;
+}
+.about>img {
+    position: absolute;
+    z-index: 1;
+    height: 270px;
+}
+.intro {
+    position: absolute;
+    width: 145px;
+    height: 270px;
+    display: none;
+    z-index: 2;
+    background: #193149;
+}
+.intro>h3 {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0 20px;
+}
+.intro>p {
+    font-family: 'Arial';
+    font-size: 10px;
+    line-height: 15px;
+    text-align: justify;
+    padding: 0 8px;
+}
+.intro>button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.about:hover>.intro {
+    display: block;
+}
