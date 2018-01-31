@@ -173,7 +173,6 @@ body {
 .circle {
     width: 90px;
     height: 90px;
-
 }
 .circleLeft {
     width: 45px;
@@ -185,6 +184,7 @@ body {
     left: 35px;
     top: 450px;
     z-index: 1;
+    outline-width: 0;
 }
 .circleLeft:hover {
     background-color: rgba(56, 175, 229, 0.5);
@@ -208,6 +208,7 @@ body {
     top: 450px;
     transform: translate(-50%, -50%)
     z-index: 5;
+    outline-width: 0;
 }
 .circleRight:hover {
     background-color: rgba(56, 175, 229, 0.5);
