@@ -47,19 +47,10 @@ body {
 .menu-firstelement:hover>a {
     color: #263555;
 }
-.menu-firstelement>a {
-    padding-bottom: 15px;
-}
 .menu-first1 {
     position: absolute;
     display: inline-block;
     left: 100px;
-    top: 56px;
-}
-.menu-first2 {
-    position: absolute;
-    display: inline-block;
-    right: 100px;
     top: 56px;
 }
 .menu-first1>.menu-firstelement {
@@ -78,7 +69,7 @@ body {
     margin-left: 0px;
 }
 .menu-firstelement:nth-child(3) {
-    margin-right: 0px;
+    margin-right: 200px;
 }
 .menu a{
     text-decoration: none;
@@ -122,7 +113,7 @@ body {
     width: 1025px;
     margin: auto;
     background: #fff;
-    padding: 60px 60px 0 60px;
+    padding: 60px 60px 135px 60px;
     margin-top: 50px;
 }
 .slide,
@@ -166,6 +157,7 @@ body {
 .photoprev2 {
     font-size: 34px;
     top: 570px;
+    background: #38afe5;
     color: #ffffff;
     padding: 15px;
     margin-left: 10px;
@@ -245,7 +237,6 @@ h2 {
     height: 270px;
     position: relative;
     margin-right: 13px;
-    margin-bottom: 135px;
 }
 .about:last-child {
     margin-right: 0;
