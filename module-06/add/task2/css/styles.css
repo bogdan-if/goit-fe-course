@@ -1,0 +1,52 @@
+.wrapper {
+    font-size: 11px;
+    font-family: Arial;
+    padding: 50px;
+    width: 1024px;
+    padding: 55px 310px 55px 55px;
+}
+.posts {
+    display: flex;
+    align-items: flex-start;
+}
+.posts>img {
+    padding-right: 20px;
+
+}
+.posts>img:hover {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform: rotate(45deg);
+}
+.info>h2 {
+    font-size: 13px;
+    color: #263555;
+    margin-bottom: 20px;
+}
+.info>h2:hover {
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    font-size: 150%;
+}
+.info>p {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.5;    
+}
+.info>p:hover {
+    transition-property: color;
+    transition-duration: 0.3s;
+    color: #70e621;
+}
+.info>a>button {
+    border-radius: 5px;
+    outline-width: 0;
+    font-size: 12px;
+    width: 60px;
+}
+.info>a>button:hover {
+    transition-property: width;
+    transition-duration: 0.2s;
+    width: 90px;
+}
+

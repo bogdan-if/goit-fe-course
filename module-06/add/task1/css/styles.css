@@ -1,0 +1,46 @@
+article {
+    font-size: 16;
+    font-family: Pathway Gothic One;
+    text-transform: uppercase;
+    padding: 50px;
+}
+article>h2 {
+    margin: 0 0 40px 10px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+}
+.picture>li {
+    flex: 1 0 30%;
+    padding: 10px;
+}
+.picture>li>a {
+    display: block;
+    position: relative;
+}
+.picture>li:hover .zoom {
+    display: block;
+}
+.picture>li:hover {
+    transition-property: filter;
+    transition-duration: 0.6s;
+    filter: brightness(60%);
+}
+
+.zoom {
+    display: none;
+    position:absolute; 
+    left:50%; 
+    top:50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/zoom-in.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
