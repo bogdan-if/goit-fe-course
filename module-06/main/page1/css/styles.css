@@ -1,0 +1,373 @@
+body {
+    font-size: 16;
+    font-family: Pathway Gothic One;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+header {
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+/* logo */
+.logo {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 140px;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+}
+.name {
+    text-transform: uppercase;
+    font-family: 'Dorsa';
+    font-size: 60px;
+    color: #263555;
+    display: inline-block;
+}
+/* menu */
+.menu {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 28px;
+    position: relative;
+}
+.menu-firstelement:hover>a {
+    color: #263555;
+}
+.menu-first {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1024px;
+    height: 140px;
+}
+.menu-first>.menu-firstelement {
+    list-style-type: none;
+    position: relative;
+}
+.menu-firstelement:nth-child(3) {
+    margin-right: 180px;
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.menu-second {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #ffffff;
+    top: 38px;
+    left: -7px;
+    padding: 0 10px 0;
+    border-radius: 3px;
+    text-align: center;
+}
+.menu-secondelement>a {
+    color: #6b7488;
+    font-size: 20px;
+
+}
+.menu-second::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    top: -9px;
+    left: 36%;
+}
+.menu-firstelement:hover>.menu-second {
+    display: block;
+}
+/* .wrapper */
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    background: #fff;
+    padding: 118px 60px 85px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #263555;
+}
+h3 {
+    font-size: 15px;
+    color: #263555;
+    display: inline-block;
+    line-height: 1.2;
+    font-family: Arial;
+}
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: Arial;
+}
+.list {
+    column-count: 2;
+    list-style-type: none;
+    font-size: 15px;
+    color: #263555;
+    /* margin: 40px 0 0 20px; */
+}
+.maininfo {
+    display: flex;
+    /* justify-content: space-between; */
+
+    padding-bottom: 50px;
+    box-shadow: 0 2px 0 0 #BDBDBD;
+}
+.otherinfo {
+    margin-top: 60px;
+    display: flex;
+}
+/*agency profile*/
+.about {
+    width: 650px;
+    margin-right: 50px;
+    vertical-align: top;
+}
+.about h2 {
+    margin-bottom: 50px;
+}
+.about img {
+    display: block;
+    width: 360px;
+    float: left;
+    margin: 0 25px 25px 0;
+}
+.about h3 {
+    margin-bottom: 20px;
+    display: block;
+}
+.about p {
+    margin-bottom: 10px;
+}
+.about p:last-child{
+    margin-bottom: 0px;
+}
+
+/* our principles */
+.workflow {
+    width: 200px;
+    counter-reset: principles;
+}
+.workflow:first-child {
+    margin-left: 0;
+}
+.workflow h2 {
+    margin-bottom: 50px;
+}
+.workflow h3 {
+    margin-bottom: 10px;
+    counter-increment: principles;
+    position: relative;
+    padding-left: 30px;
+}
+.workflow h3::before {
+    content: counter(principles, decimal) '';
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    background-color: #38afe5;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 0px;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.workflow p {
+    margin-bottom: 35px;
+    padding-left: 30px; 
+}
+.workflow li{
+    margin-bottom: 35px;
+}
+.workflow li:last-child {
+    margin-bottom: 0px;
+}
+
+/* what we offer */
+.offers {
+    width: 650px;
+    vertical-align: top;
+    margin-right: 50px;
+}
+.offers h2{
+    margin-bottom: 65px;
+}
+.offers h3{
+    margin-bottom: 23px;
+}
+.offers p{
+    margin-bottom: 35px;
+}
+.list li{
+    margin-bottom: 25px;
+}
+.list li:last-child{
+    margin-bottom: 0px;
+}
+.list li::before {
+    content: " \2192 ";
+    color: #38afe5;
+    margin-right: 12px; 
+}
+/* testimonial */
+.contacts {
+    width: 200px; 
+}
+.contacts h2 {
+    margin-bottom: 45px;
+}
+.info {
+    padding: 25px;
+    border: 2px solid #dfdcdc;
+    margin-bottom: 45px;
+    position: relative;
+}
+.info::before, .info::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 15px 0 15px;
+    border-color: #dfdcdc transparent transparent transparent;
+    position: absolute;
+    top: 208px;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+.info::after {
+    border-width: 26px 15px 0 15px;
+    top: 208px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.info h3::before {
+    content: " \0022 ";
+}
+.info h3::after {
+    content: " \0022 ";
+}
+.person {
+    text-align: center;
+}
+.person h3 {
+    margin-bottom: 15px;
+}
+.up {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 92%;
+    left: 90%;
+    background-color: #38afe5;
+    border-radius: 50%;
+}
+.up::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    border: 1px solid #ffff;
+    transform: rotate(45deg);
+    top: 45%;
+    left: 44%;
+    position: absolute;
+}
+.up::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    border: 1px solid #ffff;
+    transform: rotate(135deg);
+    top: 45%;
+    left: 22%;
+    position: absolute;
+}
+/* footer */
+footer {
+    width: 1024px;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    background: #30455b;
+    padding: 40px 0;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 2;
+}
+.contact-block {
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+.contact-block a {
+    line-height: 1;
+}
+footer p {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 16px;
+    line-height: 2;
+}
+.social {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.official {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.official a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.official p{
+    line-height: 1;
+}
+
