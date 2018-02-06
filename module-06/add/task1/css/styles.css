@@ -3,6 +3,7 @@ article {
     font-family: Pathway Gothic One;
     text-transform: uppercase;
     padding: 50px;
+    width: 1024px;
 }
 article>h2 {
     margin: 0 0 40px 10px;
@@ -14,9 +15,11 @@ img {
 .picture {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 450px
 }
 .picture>li {
-    flex: 1 0 30%;
+    flex: 0 0 30%;
     padding: 10px;
 }
 .picture>li>a {

@@ -9,11 +9,11 @@
     display: flex;
     align-items: flex-start;
 }
-.posts>img {
+.flat {
     padding-right: 20px;
 
 }
-.posts>img:hover {
+.flat:hover>img {
     transition-property: transform;
     transition-duration: 0.3s;
     transform: rotate(45deg);

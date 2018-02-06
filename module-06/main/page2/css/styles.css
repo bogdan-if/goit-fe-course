@@ -102,28 +102,12 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-.clearfix::after {
-    display: table;
-    content: '';
-    clear: both;
-}
 h2 {
     font-size: 32px;
     text-transform: uppercase;
     color: #263555;
-}
-
-
-
-
-
-article {
-    font-size: 16;
     font-family: Pathway Gothic One;
-    text-transform: uppercase;
-}
-article>h2 {
-    margin: 0 0 40px 10px;
+    margin: 0 0 40px 20px;
 }
 img {
     width: 100%;
@@ -132,10 +116,11 @@ img {
 .picture {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 550px;
 }
 .picture>li {
-    flex: 1 0 30%;
-    padding: 10px;
+    flex: 0 0 30%;
 }
 .picture>li>a {
     display: block;
