@@ -99,8 +99,8 @@ header {
     margin: auto;
     background: #fff;
     padding: 95px 60px 135px;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 h2 {
     font-size: 32px;
