@@ -5,14 +5,16 @@ body {
     min-width: 20rem;
 }
 .masthead-wrapper {
-    background: linear-gradient(
-        to top,
-        rgba(26, 25, 21, 0.2) 100%,
-        rgba(26, 25, 21, 0.2) 100%
-    ), url('../images/background.jpg');
+    background:  
+                linear-gradient(
+                to top,
+                rgba(26, 25, 21, 0.5) 100%,
+                rgba(26, 25, 21, 0.5) 100%),
+                url('../images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-blend-mode: hard-light;
     padding-top: 1.19rem;
     padding-bottom: 8.5625rem;
 }
@@ -53,7 +55,7 @@ body {
 .logo {
     color: #ffffff;
     font-family: 'Montserrat';
-    font-size: 0.875rem;
+    font-size: 1,1765rem;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -66,10 +68,15 @@ body {
 .hero-title {
     color: #ffffff;
     font-family: 'Montserrat';
-    font-size: 1.25rem;
+    font-size: 1.875rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero-title:nth-last-child(1) {
+    /* display: block; */
 }
 .hero-hello {
     color: #ffffff;
@@ -77,6 +84,8 @@ body {
     font-size: 1.125rem;
     font-weight: 300;
     margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-btn {
@@ -145,28 +154,28 @@ body {
     font-weight: 300;
     text-align: center;
     margin-bottom: 2.45rem;
+    line-height: 1.3125rem;
 }
 .partners-btn {
     display: block;
     margin: auto;
     width: 17.25rem;
     height: 2.25rem;
-    background: #ff4e50;
+    background: none;
+    border: 2px solid #ff4e50;
     border-radius: 15% 15% 15% 15% / 100% 100% 100% 100%;
     position: relative;
 }
 .partners-btn:hover {
-    background: none;
-    border-radius: 15% 15% 15% 15% / 100% 100% 100% 100%;
-    border: 2px solid #ff4e50;
+    background: #ff4e50;
 }
 .partners-btn:hover>.partners-btn-content {
-    color: #ff4e50;
-    width: 100%;
-    text-align: center;
+    color: #ffffff;
 }
 .partners-btn-content {
-    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    color: #ff4e50;
     font-family: 'Montserrat';
     font-size: 0.875rem;
     font-weight: 700;
@@ -229,3 +238,4 @@ body {
         padding-bottom: 4.625rem;
     }
 }
+
